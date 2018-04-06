@@ -1,6 +1,6 @@
 package employee;
 
-public class SalariedEmployee extends Employee{
+public class SalariedEmployee extends Employee {
 
     //Instance Variable
     private double weeklySalary;
@@ -37,5 +37,9 @@ public class SalariedEmployee extends Employee{
         return "SalariedEmployee{" +
                 "weeklySalary=" + weeklySalary +
                 '}';
+    }
+
+    public double getPaymentAmount() {
+        return 0;
     }
 }

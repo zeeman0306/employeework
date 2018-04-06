@@ -1,6 +1,7 @@
 package employee;
 
-public abstract class Employee {
+public abstract class Employee implements IPayable{
+
     //Instance Variables
     private static int count = 0;
     private String firstName;
@@ -18,12 +19,11 @@ public abstract class Employee {
 
     }
 
+
     //Method
     public double RnngsMthd(){
-        return 0    ;
+        return 0;
     }
-
-
 
 
     //getter, but no setter
@@ -51,6 +51,7 @@ public abstract class Employee {
         this.lastName = lastName;
     }
 
+    //Instance Variables
     @Override
     public String   toString() {
         return "Employee{" +
@@ -58,5 +59,9 @@ public abstract class Employee {
                 ", lastName='" + lastName + '\'' +
                 ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
                 '}';
+    }
+
+    public double getPaymentAmount() {
+        return this.RnngsMthd();
     }
 }

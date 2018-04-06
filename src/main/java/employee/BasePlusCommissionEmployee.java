@@ -1,6 +1,6 @@
 package employee;
 
-public class BasePlusCommissionEmployee extends CommissionedEmployee{
+public class BasePlusCommissionEmployee extends CommissionedEmployee {
 
 
     //Base salary
@@ -39,5 +39,9 @@ public class BasePlusCommissionEmployee extends CommissionedEmployee{
         return "BasePlusCommissionEmployee{" +
                 "salary=" + salary +
                 '}';
+    }
+
+    public double getPaymentAmount() {
+        return 0;
     }
 }

@@ -1,6 +1,6 @@
 package employee;
 
-public class HourlyEmployee extends  Employee{
+public class HourlyEmployee extends  Employee {
 
     //Instance Variables
     private double wage;
@@ -51,5 +51,12 @@ public class HourlyEmployee extends  Employee{
                 "wage=" + wage +
                 ", hours=" + hours +
                 '}';
+    }
+
+
+
+
+    public double getPaymentAmount() {
+        return 0;
     }
 }

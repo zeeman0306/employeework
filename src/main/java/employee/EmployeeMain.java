@@ -1,7 +1,5 @@
 package employee;
 
-import javax.jws.soap.SOAPBinding;
-
 public class EmployeeMain {
     public static void main(String[] args) {
 
@@ -17,13 +15,19 @@ public class EmployeeMain {
         BasePlusCommissionEmployee Sears = new BasePlusCommissionEmployee("Zamir", "Lewis", "555-55-5555", 4000.0, 0.05, 155.5);
 
 
+        Invoice invoice = new Invoice("225-563", "Catalytic Converter", 6, 7.0);
 
-        Employee[] EmpArray = new Employee[]{McDonalds, IBM, Sears};
+
+
+
+        Employee[] EmpArray = new Employee[]{McDonalds, IBM , Sears};
         for (Employee worker: EmpArray){
             System.out.println("=========================================");
             System.out.println("This employee earned " + worker.RnngsMthd());
         }
 
+
+        System.out.println("HR owes $" + invoice.getPaymentAmount() + ".");
 
     }
 }

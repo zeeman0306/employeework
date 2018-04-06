@@ -1,6 +1,6 @@
 package employee;
 
-public abstract class CommissionedEmployee extends Employee{
+public abstract class CommissionedEmployee extends Employee {
 
     //Instance Variables
     private double grossSales;
@@ -44,8 +44,6 @@ public abstract class CommissionedEmployee extends Employee{
 
 
     //toString method
-
-
     @Override
     public String toString() {
         return "CommissionedEmployee{" +
