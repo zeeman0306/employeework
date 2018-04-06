@@ -1,6 +1,6 @@
 package employee;
 
-public class CommissionedEmployee extends Employee{
+public abstract class CommissionedEmployee extends Employee{
 
     //Instance Variables
     private double grossSales;

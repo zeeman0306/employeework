@@ -1,6 +1,6 @@
 package employee;
 
-public class Employee {
+public abstract class Employee {
     //Instance Variables
     private static int count = 0;
     private String firstName;
@@ -20,7 +20,7 @@ public class Employee {
 
     //Method
     public double RnngsMthd(){
-        return 0;
+        return 0    ;
     }
 
 
