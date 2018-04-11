@@ -5,11 +5,12 @@ public class HourlyEmployee extends  Employee {
     //Instance Variables
     private double wage;
     private double hours;
+    private HireDate hireDate;
 
 
     //Constructor
-    public HourlyEmployee (String fName, String lName, String sSN, double wg, double hrs){
-        super(fName, lName, sSN);
+    public HourlyEmployee (String fName, String lName, String sSN, double wg, double hrs, HireDate hireDate){
+        super(fName, lName, sSN, hireDate);
         this.wage = wg;
         this.hours = hrs;
 
@@ -41,6 +42,13 @@ public class HourlyEmployee extends  Employee {
         this.hours = hours;
     }
 
+    public HireDate getHireDate() {
+        return hireDate;
+    }
+
+    public void setHireDate(HireDate hireDate) {
+        this.hireDate = hireDate;
+    }
 
     //toString
 

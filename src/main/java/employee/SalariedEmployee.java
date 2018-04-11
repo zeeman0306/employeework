@@ -7,8 +7,8 @@ public class SalariedEmployee extends Employee {
 
 
     //Constructor
-    public SalariedEmployee (String fName, String lName, String sSN, double wS){
-        super(fName, lName, sSN);
+    public SalariedEmployee (String fName, String lName, String sSN, double wS, HireDate hireDate){
+        super(fName, lName, sSN, hireDate);
         this.weeklySalary = wS;
     }
 
@@ -28,6 +28,7 @@ public class SalariedEmployee extends Employee {
     public void setWeeklySalary(double weeklySalary) {
         this.weeklySalary = weeklySalary;
     }
+
 
 
 

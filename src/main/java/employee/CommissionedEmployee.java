@@ -8,12 +8,13 @@ public abstract class CommissionedEmployee extends Employee {
 
 
     //Constructor
-    public CommissionedEmployee (String fName, String lName, String sSN, double gS, double cR){
-        super(fName, lName, sSN);
+    public CommissionedEmployee (String fName, String lName, String sSN, double gS, double cR, HireDate hireDate){
+        super(fName, lName, sSN, hireDate);
         this.grossSales = gS;
         this.commissionRate = cR;
 
     }
+
 
 
     //Earnings Method
@@ -41,6 +42,8 @@ public abstract class CommissionedEmployee extends Employee {
     public void setCommissionRate(double commissionRate) {
         this.commissionRate = commissionRate;
     }
+
+
 
 
     //toString method

@@ -7,12 +7,13 @@ public abstract class Employee implements IPayable{
     private String firstName;
     private String lastName;
     private final String socialSecurityNumber;
-
+    private HireDate hireDate;
     //Constructor
-    public Employee (String fName, String lName, String sSN){
+    public Employee (String fName, String lName, String sSN, HireDate hireDate){
         this.firstName = fName;
         this.lastName = lName;
         this.socialSecurityNumber = sSN;
+        this.hireDate = hireDate;
         count++;
 
         System.out.printf("Constructed employee %s %s | count=%d%n", firstName, lastName, count);
@@ -50,6 +51,15 @@ public abstract class Employee implements IPayable{
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public HireDate getHireDate() {
+        return hireDate;
+    }
+
+    public void setHireDate(HireDate hireDate) {
+        this.hireDate = hireDate;
+    }
+
 
     //Instance Variables
     @Override

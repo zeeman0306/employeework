@@ -8,8 +8,8 @@ public class BasePlusCommissionEmployee extends CommissionedEmployee {
 
 
     //Constructor
-    public BasePlusCommissionEmployee (String fName, String lName, String sSN, double gS, double cR, double slry){
-        super(fName, lName, sSN, gS, cR);
+    public BasePlusCommissionEmployee (String fName, String lName, String sSN, double gS, double cR, double slry, HireDate hireDate){
+        super(fName, lName, sSN, gS, cR, hireDate);
         this.salary = slry;
     }
 
